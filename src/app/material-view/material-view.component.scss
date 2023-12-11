@@ -1,0 +1,24 @@
+@use '@angular/material' as mat;
+@use '../sanbox-mixins' as sandboxMixin;
+@use '../sandbox-themes' as sandbox;
+
+:host {
+    
+    .material-view-container {
+        @include sandboxMixin.flexboxLayout(column, flex-start, center);
+        height: 100%;
+
+        .box-container {
+            @include sandboxMixin.flexboxLayout;
+            
+            .box {
+                @include sandboxMixin.flexboxLayout(column, center, center);
+                height: 50px;
+                margin: 20px;
+                width: 100px;
+        
+            }
+
+        }
+    }
+}

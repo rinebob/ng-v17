@@ -1,0 +1,7 @@
+@use '@angular/material' as mat;
+@use './app/sandbox-themes' as sandbox;
+@include mat.core();
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+p { margin: 0; padding: 0;}

@@ -1,0 +1,48 @@
+
+<mat-toolbar color="primary">
+
+    <button mat-icon-button class="open-sidenav-button" (click)="sidenav.open()">
+
+        <mat-icon>menu</mat-icon>
+
+    </button>
+
+    <mat-slide-toggle color="accent"
+                    (change)="toggleDarkMode()"
+                    [checked]="darkModeOn"
+    >
+    Dark mode
+    </mat-slide-toggle>
+
+</mat-toolbar>
+
+<mat-sidenav-container>
+  
+    <!-- opened="true" -->
+    <mat-sidenav #sidenav
+                mode="push"
+    >
+
+        <div class="drawer-container">
+
+            <button *ngFor="let button of SANDBOX_NAV_BUTTONS" type="button"
+                    color="primary"
+                    mat-raised-button
+                    [routerLink]="button.routerLink"
+                    class="nav-button"
+                    (click)="sidenav.close()"
+            >
+            {{button.text}}
+            </button>      
+            
+        </div>
+
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+
+        <router-outlet></router-outlet>
+
+    </mat-sidenav-content>
+
+</mat-sidenav-container>
