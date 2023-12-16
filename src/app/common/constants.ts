@@ -4,6 +4,9 @@ import { Book, Category, BookType } from './interfaces';
 
 export const SANDBOX_NAV_BUTTONS:NavButtonConfig[] = [
     {routerLink: SandboxRoutes.ANGULAR_NEW_FEATURES, text: 'Ng new features'},
+    {routerLink: SandboxRoutes.CONTROL_FLOW, text: 'Template Control Flow'},
+    {routerLink: SandboxRoutes.DEFERRABLE_VIEWS, text: 'Deferrable Views'},
+    {routerLink: SandboxRoutes.VIEW_TRANSITIONS, text: 'View Transitions'},
     {routerLink: SandboxRoutes.BOOKS_APP, text: 'Book list manager'},
     
 ];

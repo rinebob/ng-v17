@@ -6,6 +6,9 @@ export interface NavButtonConfig {
 }
 
 export enum SandboxRoutes {
+    CONTROL_FLOW = 'control-flow',
+    DEFERRABLE_VIEWS = 'deferrable-views',
+    VIEW_TRANSITIONS = 'view-transitions',
     ANGULAR_NEW_FEATURES = 'ng-new-features',
     BOOKS_APP = 'books',
 }
